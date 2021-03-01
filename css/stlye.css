@@ -23,7 +23,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  background-color: #ffffff;
+  background-color: #FFE4C4;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -128,7 +128,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #ff7f50;
+  color: #FFE4C4;
 }
 
 a:hover {
