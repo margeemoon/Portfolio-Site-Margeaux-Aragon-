@@ -3,6 +3,9 @@ Colors used:
 Primary Color (Tomato): #FF6347;
 Secondary Color (Teal): #008080;
 */
+header {
+  background-color: #ff44c4;
+}
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
