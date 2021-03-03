@@ -2,10 +2,88 @@
 Colors used:
 Primary Color (Tomato): #FF6347;
 Secondary Color (Teal): #008080;
+Link color (Pale Yellow): #ffffe0;
 */
-header {
-  background-color: #ff44c4;
+/* Layout styling */
+.container {
+  padding: 0 15px;
 }
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+  width: 100%
+}
+
+nav>ul>li>a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+header {
+  background-color: #ffe4c4;
+  padding: 10px 0;
+  margin: 10px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+}
+
+selector {
+  margin: 0 auto;
+  /* No spacing to top and bottom and auto spacing to left and right */
+  position: relative;
+  float: right;
+  width: 1200%;
+  width: 80%;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -27,6 +105,15 @@ h1 {
   font-weight: 700;
 }
 
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+.left {
+  text-align: left;
+}
+
 h2 {
   font-size: 2.25em;
   font-weight: 700;
@@ -42,8 +129,9 @@ h4 {
   font-weight: 400;
 }
 
-p {
+p>ul> {
   font-size: 20px;
+  list-style-type: none;
 }
 
 img {
@@ -69,7 +157,7 @@ a:hover {
 
 a:active {
   /* selected link */
-  color: #994c30;
+  color: #ffffe0;
 }
 
 a:hover,
