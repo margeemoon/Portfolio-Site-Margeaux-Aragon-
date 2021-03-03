@@ -29,7 +29,7 @@ Link color (Pale Yellow): #ffffe0;
 
 header {
   background-color: #ffe4c4;
-  text-align: center;
+  text-align: left;
   padding: 10px 0;
   width: 100%
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -129,7 +129,7 @@ h4 {
   font-weight: 400;
 }
 
-p>ul> {
+p>ul>li {
   font-size: 20px;
   list-style-type: none;
 }
