@@ -58,6 +58,10 @@ nav>ul>li>a:visited {
   color: #4a4a4a;
 }
 
+.navigation {
+  text-align: right;
+}
+
 #hero {
   background-color: #ffe4c4;
   padding: 20px 0;
@@ -67,6 +71,7 @@ nav>ul>li>a:visited {
 
 #hero span {
   display: block;
+  text-align: center;
 }
 
 main {
