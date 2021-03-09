@@ -14,6 +14,12 @@ Link color (Pale Yellow): #ffffe0;
   /* 25px top and bottom, 0 left and right */
 }
 
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
@@ -21,10 +27,81 @@ Link color (Pale Yellow): #ffffe0;
 
 * {
   box-sizing: border-box;
+  padding: 10px 0;
 }
 
 .logo {
   max-width: 250px;
+}
+
+.animation.picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 header {
@@ -67,6 +144,7 @@ nav>ul>li>a:visited {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 #hero span {
@@ -102,10 +180,6 @@ h1 {
 #hero h1 {
   text-align: center;
   /* Centers text */
-}
-
-.left {
-  text-align: left;
 }
 
 h2 {
@@ -162,23 +236,21 @@ a:focus {
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
-  color: #ffffff;
-  /* needed to override the default link color */
+  color: white;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
-  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
 }
+
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 
 .button.contact {
   background-color: transparent;
@@ -213,12 +285,22 @@ Medium devices (640px and larger)
   [class*="col-"] {
     float: left;
   }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* ==============================
 X-large devices (1440px or larger)
