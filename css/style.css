@@ -33,6 +33,18 @@ Link color (Pale Yellow): #ffffe0;
   max-width: 250px;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .animation.picture {
   width: 100%;
   max-width: 100%;
@@ -101,6 +113,10 @@ Link color (Pale Yellow): #ffffe0;
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.berlin-illustration {
+  width: 100%;
 }
 
 header {
