@@ -122,8 +122,8 @@ Link color (Pale Yellow): #ffffe0;
 header {
   background-color: #ffe4c4;
   text-align: center;
-  padding: 10px 0;
-  width: 100%;
+  padding: 10px 0 4px;
+  max-width: 150%;
   margin: 10px;
   padding-top: 99px;
   padding-right: 5px;
@@ -154,6 +154,20 @@ nav>ul>li>a:visited {
   text-align: right;
 }
 
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 #hero {
   background-color: #ffe4c4;
   padding: 20px 0;
@@ -168,7 +182,7 @@ nav>ul>li>a:visited {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 body {
@@ -277,6 +291,21 @@ a:focus {
   color: #ffffff;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -310,7 +339,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .container {
-    max-width: 1200px;
+    min-width: 641px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -321,6 +350,18 @@ Large devices (1024px or larger)
 
   .col-lg-7 {
     width: 40%;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul {
+    margin: 1em 0;
   }
 }
 
