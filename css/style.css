@@ -121,9 +121,8 @@ Link color (Pale Yellow): #ffffe0;
 
 header {
   background-color: #ffe4c4;
-  text-align: center;
   padding: 10px 0 4px;
-  max-width: 150%;
+  max-width: 150px;
   margin: 10px;
   padding-top: 99px;
   padding-right: 5px;
@@ -137,10 +136,6 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a:visited {
@@ -354,6 +349,10 @@ Large devices (1024px or larger)
     min-width: 641px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  nav>ul>li {
+    display: inline-block;
   }
 
   .col-lg-5 {
