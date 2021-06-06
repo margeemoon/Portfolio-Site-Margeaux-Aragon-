@@ -124,7 +124,7 @@ header {
   padding: 10px 0 4px;
   max-width: 150px;
   margin: 10px;
-  padding-top: 99px;
+  padding-top: 56px;
   padding-right: 5px;
   padding-bottom: 15px;
   padding-left: 5px;
@@ -136,6 +136,7 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li>a:visited {
@@ -173,7 +174,7 @@ nav>ul>li>a:visited {
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
+  padding-right: 0;
   top: 2px;
   font-size: 20px;
 }
@@ -333,10 +334,6 @@ Medium devices (640px and larger)
   display: inline-block;
 }
 
-.navtoggle li:last-child {
-  display: none;
-}
-
 nav>ul {
   margin: 1em 0;
 }
@@ -364,6 +361,9 @@ Large devices (1024px or larger)
   }
 }
 
+.navtoggle li:last-child {
+  display: none;
+}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
